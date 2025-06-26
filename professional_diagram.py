@@ -10,7 +10,22 @@ from diagrams.aws.storage import SimpleStorageServiceS3
 from diagrams.aws.general import InternetAlt1, General
 
 with Diagram("AWS ECS Microservices Architecture", show=False, direction="TB", 
-             filename="aws_ecs_professional_architecture", outformat="svg"):
+             filename="aws_ecs_professional_architecture", outformat="png",
+             graph_attr={
+                 "fontsize": "20",
+                 "fontname": "Arial Bold",
+                 "dpi": "300"
+             },
+             node_attr={
+                 "fontsize": "12",
+                 "fontname": "Arial Bold",
+                "dpi": "300"
+             },
+             edge_attr={
+                 "fontsize": "16",
+                 "fontname": "Arial",
+                 "penwidth": "2"
+             }):
 
     # Internet and Gateway
     internet = InternetAlt1("Internet")

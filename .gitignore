@@ -7,7 +7,7 @@
 *.tfplan.*
 terraform.tfvars
 !terraform.tfvars.examplemple
-
+professional_diagram.py
 # Crash log files
 crash.log
 crash.*.log
